@@ -2,10 +2,10 @@ import db from '../config/database.js'
 
 db.run(`
         CREATE TABLE IF NOT EXISTS users (
-            id INTEREGER PRIMARY KEY AUTOINCREMENT,
-            username TEXT UNIQUE NOT NULL,
-            email TEXT UNIQUE NOT NULL,
-            password TEXT  NOT NULL,
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            username TEXT NOT NULL,
+            email TEXT NOT NULL UNIQUE,
+            password TEXT NOT NULL,
             avatar TEXT
         )
     `)
@@ -17,14 +17,14 @@ function createUserRepositories(newUser) {
             `
             INSERT INTO users (username, email, password, avatar)
             VALUES (?, ?, ?, ?)
-            `
+            `,
 
            [username, email, password, avatar], 
-           (err) => {
+           function (err) {
             if(err){
                 rej(err)
             } else {
-                res({message: 'User Created'})
+                res({id: this.lastID, ...newUser})
             }
            }
         )
