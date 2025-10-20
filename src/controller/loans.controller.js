@@ -21,7 +21,7 @@ async function findAllLoanController(req, res) {
         const loan = await loansService.findAllLoansService()
         res.send(loan)
     } catch (error) {
-        res.satus(400).send(error.message)
+        res.status(400).send(error.message)
     }
     
 }

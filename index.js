@@ -8,6 +8,7 @@ import userRouters from './src/routes/user.routes.js';
 import booksRouter from './src/routes/books.routes.js'
 import loanRouter from "./src/routes/loans.routes.js"
 import "dotenv/config"
+import "./src/services/cron.service.js"
 
 const app = express();
 
