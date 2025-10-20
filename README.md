@@ -19,8 +19,11 @@ Sistema simples de gerenciamento de biblioteca comunitária, desenvolvido em Nod
 ## 📂 Estrutura do projeto
 
 ├── index.js # Arquivo principal do servidor
+
 ├── library_db.sqlite # Banco de dados SQLite
+
 ├── package.json # Dependências e scripts do projeto
+
 ├── src/ # Código-fonte adicional (rotas, controladores, etc.)
 
 
