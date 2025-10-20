@@ -35,15 +35,15 @@ Sistema simples de gerenciamento de biblioteca comunitária, desenvolvido em Nod
    cd community_library
 
 2. Instale as dependências:
-
+   ```bash
     npm install
 
 3. Inicie o servidor:
-
+   ```bash
     node index.js
 
 4. Acesse no navegador:
-
+   ```bash
     http://localhost:3000
 
 > Projeto criado por [Arthur123ms](https://github.com/Arthur123ms).
