@@ -6,14 +6,13 @@ import { authMiddleware } from "../middlewares/auth.middleware.js";
 
 const router = Router();
 
-router.post('/users', validate(userSchema),  userControllers.createUserController)
-router.post('/users/login',  userControllers.loginUserController)
-
+router.post('/', validate(userSchema),  userControllers.createUserController)
+router.post('/login',  userControllers.loginUserController)
 router.use(authMiddleware)
-router.get('/users', userControllers.findAllUserController)
-router.get('/users/:id', validateUserId, userControllers.findUserByIdController)
-router.patch('/users/:id' , validateUserId, userControllers.updateUserController)
-router.delete('/users/:id', validateUserId, userControllers.deleteUserController)
+router.get('/', userControllers.findAllUserController)
+router.get('/:id', validateUserId, userControllers.findUserByIdController)
+router.patch('/:id' , validateUserId, userControllers.updateUserController)
+router.delete('/:id', validateUserId, userControllers.deleteUserController)
 
 
 export default router

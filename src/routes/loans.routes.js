@@ -5,9 +5,9 @@ import { loanSchema } from "../schema/loans.schema.js"
 
 const router = Router()
 
-router.post("/loans", validate(loanSchema), loansController.createLoansController)
-router.get("/loans", loansController.findAllLoanController)
-router.get("/loans/:id", validateLoanId, loansController.findAllLoanController)
-router.delete("/loans/:id", validateLoanId, loansController.deleteLoanController)
+router.post("/", validate(loanSchema), loansController.createLoansController)
+router.get("/", loansController.findAllLoanController)
+router.get("/:id", validateLoanId, loansController.findAllLoanController)
+router.delete("/:id", validateLoanId, loansController.deleteLoanController)
 
 export default router
