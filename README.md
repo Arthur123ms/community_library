@@ -46,5 +46,13 @@ Sistema simples de gerenciamento de biblioteca comunitária, desenvolvido em Nod
    ```bash
     http://localhost:3000
 
-> Projeto criado por [Arthur123ms](https://github.com/Arthur123ms).
+   
+
+##👤 Autor
+
+Desenvolvido por Arthur Souza
+
+[🔗 Meu GitHub ]("https://github.com/Arthur123ms") 
+
+[🔗 LinkedIn ]("https://www.linkedin.com/in/arthur-magalh%C3%A3es-444565230/")
 
