@@ -47,8 +47,8 @@ Sistema simples de gerenciamento de biblioteca comunitária, desenvolvido em Nod
     http://localhost:3000
 
    
- --
-##👤 Autor
+ 
+## 👤 Autor
 
 Desenvolvido por Arthur Souza
 
